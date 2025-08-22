@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simple, Nutritious Cooking</h1>
+      <p>Healthy meals with clear instructions and practical tips for teams.</p>
+
+      <nav aria-label="primary-navigation-menu">
+        <ul>
+          <li><a href="#content" aria-current="page">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#tips">Kitchen Tips</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <form aria-label="Site search">
+        <label for="search">Search recipes:</label>
+        <input id="search" name="search" type="search" required />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main id="content">
+      <h2 id="recipes">Recipe: Chickpea & Vegetable Stew</h2>
+      <p>
+        <time datetime="2025-08-22">August 22, 2025</time>
+      </p>
+
+      <section aria-labelledby="ingredients-heading">
+        <h3 id="ingredients-heading">Ingredients</h3>
+        <ul>
+          <li>2 tablespoons oil</li>
+          <li>1 onion, chopped</li>
+          <li>2 carrots, sliced</li>
+          <li>1 bell pepper, diced</li>
+          <li>2 cloves garlic, minced</li>
+          <li>2 cups cooked chickpeas</li>
+          <li>1 can (400 g) crushed tomatoes</li>
+          <li>2 cups low‑sodium broth</li>
+          <li>1 teaspoon ground cumin</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="method-heading">
+        <h3 id="method-heading">Method</h3>
+        <ol>
+          <li>Warm oil in a pot; sauté onion until translucent.</li>
+          <li>Add carrots, pepper, and garlic; cook 3–4 minutes.</li>
+          <li>Stir in chickpeas, tomatoes, broth, and cumin.</li>
+          <li>Simmer 15–20 minutes; season with salt and pepper.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="nutrition-heading">
+        <h3 id="nutrition-heading">Nutrition & Allergen Notes</h3>
+        <p>
+          This recipe is vegetarian and naturally dairy‑free. Check labels if
+          cooking for people with gluten or nut allergies.
+        </p>
+      </section>
+
+      <section aria-labelledby="tips">
+        <h2 id="tips">Quick Kitchen Tips</h2>
+        <ul>
+          <li>Label and date opened items to reduce waste.</li>
+          <li>Keep a weekly inventory of utensils and cookware.</li>
+          <li>
+            Use clean water for cooking; replace filter batteries as scheduled.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer id="contact">
+      <h2>Contact</h2>
+      <address>
+        Feness Kitchen, Nigeria
+        <br />
+        Email: <a href="mailto:hello@example.com">hello@example.com</a>
+      </address>
+      <p>
+        &copy; <time datetime="2025">2025</time> Feness. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
