@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  color: #333;
+}
+header,
+main,
+footer {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+header {
+  margin-top: 20px;
+}
+h1,
+h2,
+h3 {
+  color: #005a9c;
+}
+li {
+  list-style-type: none;
+}
+table {
+  width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #e0e7f1;
+}
+tbody tr:hover {
+  background-color: #f0f0ff;
+}
+figure {
+  margin: 1em 0;
+  text-align: center;
+}
+figcaption {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #555;
+}
+form {
+  background: #eef4fb;
+  padding: 20px;
+  border-radius: 8px;
+}
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px 20px 20px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background: white;
+  text-align: left;
+}
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #005a9c;
+  padding: 5px 10px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+button {
+  background-color: #005a9c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #004080;
+}

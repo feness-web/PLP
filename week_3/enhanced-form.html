@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enhanced Form and Content Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Enhanced Content & Form</h1>
+      <p>
+        This page demonstrates the effective use of lists, tables, media, and a
+        fully accessible HTML5 form with built-in validation.
+      </p>
+    </header>
+
+    <main>
+      <section aria-labelledby="features-list">
+        <h2 id="features-list">Key Features of Our Service</h2>
+        <p>Our service offers the following benefits:</p>
+        <ul>
+          <li>24/7 Customer Support</li>
+          <li>Secure and Fast Transactions</li>
+          <li>Multi-platform Accessibility</li>
+          <li>Customizable User Experience</li>
+          <li>Regular Updates and Improvements</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="pricing-table">
+        <h2 id="pricing-table">Pricing Plans</h2>
+        <table summary="Comparison of pricing plans and their features">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Price (per month)</th>
+              <th>Storage</th>
+              <th>Support</th>
+              <th>Custom Domain</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic</td>
+              <td>$5</td>
+              <td>10 GB</td>
+              <td>Email Support</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Standard</td>
+              <td>$15</td>
+              <td>100 GB</td>
+              <td>24/7 Phone & Email</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>$30</td>
+              <td>1 TB</td>
+              <td>Priority Support</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="media-showcase">
+        <h2 id="media-showcase">Media Showcase</h2>
+        <figure>
+          <img
+            src="Coat of arms.jpg"
+            alt="Nigeria Coat of Arm"
+            width="300"
+            height="300"
+          />
+          <figcaption>Nigeria! My Pride....</figcaption>
+        </figure>
+
+        <figure>
+          <video controls width="600" height="340" poster="Coat of arms.jpg">
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+              type="video/webm"
+            />
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Introductory video about our services.</figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="registration-form">
+        <h2 id="registration-form">User Registration Form</h2>
+        <form action="#" method="post" novalidate>
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname"
+              >Full Name
+              <span aria-hidden="true" style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="John Doe"
+              required
+              minlength="3"
+              autocomplete="name"
+              aria-describedby="fullnameHelp"
+            />
+            <small id="fullnameHelp"
+              >Enter your full legal name (at least 3 characters).</small
+            >
+
+            <label for="email"
+              >Email Address
+              <span aria-hidden="true" style="color: red">*</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+              required
+              autocomplete="email"
+            />
+
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+234-904-656-9546"
+              pattern="^\+?[0-9\s\-]{7,15}$"
+              autocomplete="tel"
+              aria-describedby="phoneHelp"
+            />
+            <small id="phoneHelp"
+              >Optional. Format: +countrycode and number, e.g.
+              +234-904-656-9546</small
+            >
+
+            <label for="dob"
+              >Date of Birth
+              <span aria-hidden="true" style="color: red">*</span></label
+            >
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              required
+              max="2006-12-31"
+              aria-describedby="dobHelp"
+            />
+            <small id="dobHelp">You must be at least 18 years old.</small>
+          </fieldset>
+
+          <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="username"
+              >Username
+              <span aria-hidden="true" style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Choose a username"
+              required
+              minlength="5"
+              maxlength="15"
+              pattern="^[a-zA-Z0-9_-]+$"
+              autocomplete="username"
+              aria-describedby="usernameHelp"
+            />
+            <small id="usernameHelp"
+              >5-15 characters; letters, numbers, underscores, and hyphens
+              only.</small
+            >
+
+            <label for="password"
+              >Password
+              <span aria-hidden="true" style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              required
+              minlength="8"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              aria-describedby="passwordHelp"
+              autocomplete="new-password"
+            />
+            <small id="passwordHelp"
+              >At least 8 characters, including uppercase, lowercase, and a
+              number.</small
+            >
+
+            <label for="confirm-password"
+              >Confirm Password
+              <span aria-hidden="true" style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Re-enter your password"
+              required
+              minlength="8"
+              autocomplete="new-password"
+            />
+            <small>Must match the password entered above.</small>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="website">Personal Website</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://example.com"
+              autocomplete="url"
+            />
+
+            <label for="bio">Short Bio</label>
+            <textarea
+              id="bio"
+              name="bio"
+              placeholder="Tell us a little about yourself..."
+              maxlength="300"
+              rows="4"
+            ></textarea>
+
+            <label
+              >Subscription Plan
+              <span aria-hidden="true" style="color: red">*</span></label
+            >
+            <select name="plan" id="plan" required>
+              <option value="" disabled selected>Select a plan</option>
+              <option value="basic">Basic - N5,000/month</option>
+              <option value="standard">Standard - N15,000/month</option>
+              <option value="premium">Premium - N30,000/month</option>
+            </select>
+
+            <label>Preferred Contact Method</label>
+            <div>
+              <input
+                type="radio"
+                id="contact-email"
+                name="contact-method"
+                value="email"
+                checked
+              />
+              <label for="contact-email" style="display: inline">Email</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="contact-phone"
+                name="contact-method"
+                value="phone"
+              />
+              <label for="contact-phone" style="display: inline">Phone</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I agree to the
+                <a href="#" target="_blank" rel="noopener"
+                  >Terms and Conditions</a
+                >
+                <span aria-hidden="true" style="color: red">*</span></label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>System Info (Read-only)</legend>
+            <label for="referrer">Referrer URL</label>
+            <input
+              type="url"
+              id="referrer"
+              name="referrer"
+              value="https://plp.com"
+              readonly
+            />
+
+            <label for="user-agent">User Agent</label>
+            <input
+              type="text"
+              id="user-agent"
+              name="user-agent"
+              value="Mozilla/5.0 (compatible)"
+              readonly
+            />
+          </fieldset>
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Enhanced Form. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
