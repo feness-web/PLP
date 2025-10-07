@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Layout</title>
+  </head>
+  <body>
+    <!-- Header using Flexbox -->
+    <header>
+      <div class="header-content">
+        <div class="logo">WebLayout</div>
+      </div>
+      <!-- Navigation using Flexbox -->
+      <nav>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main container using Grid -->
+    <div class="container">
+      <!-- Content area -->
+      <main class="content">
+        <h1>Welcome to Modern Web Design</h1>
+        <p>
+          This page demonstrates the power of combining CSS Grid and Flexbox to
+          create responsive, flexible layouts that work beautifully across all
+          devices.
+        </p>
+
+        <h2>CSS Grid for Layout Structure</h2>
+        <p>
+          The main container uses CSS Grid to create a clean two-column layout
+          on desktop, with the content area and sidebar positioned side by side.
+          The grid seamlessly adapts to a single column on tablets and mobile
+          devices.
+        </p>
+
+        <h2>Flexbox for Components</h2>
+        <p>
+          Flexbox powers the header, navigation bar, and card layout. This
+          provides perfect alignment and distribution of elements, with
+          automatic wrapping on smaller screens.
+        </p>
+
+        <h2>Responsive Design Principles</h2>
+        <p>
+          Media queries ensure the layout transforms gracefully at different
+          breakpoints. The navigation stacks vertically on mobile, the sidebar
+          moves below the content on tablets, and cards adjust their width to
+          maintain optimal readability.
+        </p>
+
+        <p>
+          This approach combines the best of both layout methods: Grid for
+          page-level structure and Flexbox for component-level flexibility. The
+          result is a maintainable, scalable design system that adapts to any
+          screen size.
+        </p>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="widget">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h3>Recent Updates</h3>
+          <ul>
+            <li><a href="#update1">Grid Layout Enhanced</a></li>
+            <li><a href="#update2">New Flexbox Features</a></li>
+            <li><a href="#update3">Mobile Optimization</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Cards using Flexbox -->
+      <section class="cards">
+        <article class="card">
+          <div class="card-header">Flexible Design</div>
+          <div class="card-body">
+            <p>
+              Build layouts that adapt to any screen size with intelligent
+              flexbox wrapping and grid reordering.
+            </p>
+            <a href="#" class="card-button">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">Grid Power</div>
+          <div class="card-body">
+            <p>
+              Create complex layouts with ease using CSS Grid's powerful
+              two-dimensional layout system.
+            </p>
+            <a href="#" class="card-button">Explore</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">Responsive First</div>
+          <div class="card-body">
+            <p>
+              Design with mobile in mind, then enhance for larger screens using
+              progressive enhancement techniques.
+            </p>
+            <a href="#" class="card-button">Get Started</a>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- Footer using Flexbox -->
+    <footer>
+      <div class="footer-content">
+        <div>&copy; 2025 WebLayout. All rights reserved.</div>
+        <ul class="footer-links">
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
