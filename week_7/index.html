@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations + JavaScript Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎨 Level Up: CSS Animations + JavaScript!</h1>
+        <p>Making things move and come alive!</p>
+      </div>
+
+      <!-- PART 1: CSS TRANSITIONS & ANIMATIONS -->
+      <div class="section">
+        <h2>🎨 Part 1: CSS Transitions & Animations</h2>
+
+        <div class="learning-note">
+          <strong>💡 What I'm Learning:</strong> CSS can make things animate
+          smoothly! Transitions handle changes (like hover), while @keyframes
+          create custom animations.
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 1: Button Hover Effects (Transitions)</h3>
+          <p>Watch what happens when I hover over these buttons!</p>
+
+          <button class="hover-btn">Lift & Scale Effect</button>
+          <button class="hover-btn fade-btn">Fade Effect</button>
+          <button class="hover-btn rotate-btn">Rotate Effect</button>
+          <button class="hover-btn slide-btn">Slide Effect</button>
+
+          <div
+            style="
+              margin-top: 1rem;
+              padding: 1rem;
+              background: #e7f3ff;
+              border-radius: 8px;
+            "
+          >
+            <strong>🔍 Behind the scenes:</strong> Using
+            <code>transition: all 0.3s ease;</code> makes any CSS property
+            change smoothly over 0.3 seconds!
+          </div>
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 2: Continuous Animations (@keyframes)</h3>
+          <p>These animations loop forever using @keyframes!</p>
+
+          <div class="bouncing-box">Bounce!</div>
+
+          <div style="text-align: center; margin: 2rem 0">
+            <div class="spinning-icon">⚙️</div>
+            <p>This gear spins continuously</p>
+          </div>
+
+          <div class="pulsing-circle"></div>
+          <p style="text-align: center">Pulsing circle</p>
+        </div>
+      </div>
+
+      <!-- PART 2: JAVASCRIPT FUNCTIONS - SCOPE & PARAMETERS -->
+      <div class="section">
+        <h2>📚✨ Part 2: Functions Deep Dive - Scope, Parameters & Returns</h2>
+
+        <div class="learning-note">
+          <strong>💡 What I'm Learning:</strong> Functions are like
+          mini-programs! They take inputs (parameters), do work, and give back
+          outputs (return values). Scope determines where variables can be
+          accessed.
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 1: Understanding Scope</h3>
+          <p>Let me demonstrate local vs global scope!</p>
+          <button class="btn" onclick="demonstrateScope()">Test Scope</button>
+          <div
+            id="scopeOutput"
+            style="
+              margin-top: 1rem;
+              padding: 1rem;
+              background: #f8f9fa;
+              border-radius: 8px;
+            "
+          ></div>
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 2: Functions with Parameters & Return Values</h3>
+          <p>Calculator using reusable functions!</p>
+
+          <input
+            type="number"
+            id="num1"
+            placeholder="Number 1"
+            style="
+              padding: 0.5rem;
+              margin: 0.5rem;
+              border: 2px solid #dee2e6;
+              border-radius: 5px;
+            "
+          />
+          <input
+            type="number"
+            id="num2"
+            placeholder="Number 2"
+            style="
+              padding: 0.5rem;
+              margin: 0.5rem;
+              border: 2px solid #dee2e6;
+              border-radius: 5px;
+            "
+          />
+          <br />
+          <button class="btn" onclick="performOperation('add')">Add</button>
+          <button class="btn" onclick="performOperation('multiply')">
+            Multiply
+          </button>
+          <button class="btn" onclick="performOperation('power')">Power</button>
+
+          <div
+            id="calcOutput"
+            style="
+              margin-top: 1rem;
+              padding: 1rem;
+              background: #f8f9fa;
+              border-radius: 8px;
+              font-size: 1.2rem;
+              font-weight: bold;
+            "
+          ></div>
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 3: Score System (Using Closures & Scope)</h3>
+          <p>A score counter that demonstrates scope and state!</p>
+
+          <div class="score-display" id="scoreDisplay">0</div>
+
+          <button class="btn btn-success" onclick="updateScore(10)">
+            +10 Points
+          </button>
+          <button class="btn btn-success" onclick="updateScore(50)">
+            +50 Points
+          </button>
+          <button class="btn btn-danger" onclick="updateScore(-20)">
+            -20 Points
+          </button>
+          <button class="btn" onclick="resetScore()">Reset</button>
+        </div>
+      </div>
+
+      <!-- PART 3: COMBINING CSS + JAVASCRIPT -->
+      <div class="section">
+        <h2>🎨🎬 Part 3: The Magic Combo - CSS Animations + JavaScript!</h2>
+
+        <div class="learning-note">
+          <strong>💡 What I'm Learning:</strong> JavaScript can trigger CSS
+          animations by adding/removing classes! This gives me full control over
+          when animations happen.
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 1: Trigger Animations with Buttons</h3>
+          <p>Click buttons to animate the box!</p>
+
+          <div class="animated-box" id="animatedBox">Click or use buttons!</div>
+
+          <div style="text-align: center">
+            <button class="btn" onclick="triggerAnimation('shake')">
+              Shake It
+            </button>
+            <button class="btn" onclick="triggerAnimation('bounce')">
+              Bounce
+            </button>
+            <button class="btn" onclick="triggerAnimation('rotate')">
+              Spin
+            </button>
+            <button class="btn" onclick="triggerAnimation('slide')">
+              Slide In
+            </button>
+          </div>
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 2: Interactive Card Flip</h3>
+          <p>Click the card to flip it!</p>
+
+          <div class="flip-card" id="flipCard" onclick="flipCard()">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>Click to Flip! 🎴</p>
+              </div>
+              <div class="flip-card-back">
+                <p>You flipped me! 🎉</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 3: Loading Animation Controller</h3>
+          <p>Start and stop a loading spinner!</p>
+
+          <div class="loader" id="loader"></div>
+
+          <div style="text-align: center; margin-top: 1rem">
+            <button class="btn btn-success" onclick="startLoading()">
+              Start Loading
+            </button>
+            <button class="btn btn-danger" onclick="stopLoading()">
+              Stop Loading
+            </button>
+          </div>
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 4: Animated Progress Bar</h3>
+          <p>Watch the progress bar fill up!</p>
+
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar">0%</div>
+          </div>
+
+          <button class="btn" onclick="animateProgress(25)">25%</button>
+          <button class="btn" onclick="animateProgress(50)">50%</button>
+          <button class="btn" onclick="animateProgress(75)">75%</button>
+          <button class="btn" onclick="animateProgress(100)">100%</button>
+          <button class="btn" onclick="animateProgress(0)">Reset</button>
+        </div>
+
+        <div class="experiment-box">
+          <h3>Experiment 5: Modal Popup with Animations</h3>
+          <p>Click to show an animated modal!</p>
+
+          <button class="btn" onclick="openModal()">Open Modal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+      <div class="modal" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <h2 style="color: #667eea; margin-bottom: 1rem">🎉 Animated Modal!</h2>
+        <p>
+          This modal slides up and fades in using CSS animations triggered by
+          JavaScript!
+        </p>
+        <p style="margin-top: 1rem">
+          I added/removed the "show" class to make it appear/disappear smoothly.
+        </p>
+        <button class="btn" onclick="closeModal()" style="margin-top: 1rem">
+          Close Modal
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
